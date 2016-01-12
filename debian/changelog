@@ -1,0 +1,71 @@
+meqtrees-cattery (1.4.0-0trusty) trusty; urgency=medium
+
+  * New upstream release
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 12 Jan 2016 16:52:50 +0200
+
+meqtrees-cattery (1.3.3-3trusty) trusty; urgency=medium
+
+  * move from pyrap to python-casacore
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Tue, 01 Sep 2015 11:27:08 +0200
+
+meqtrees-cattery (1.3.3-2trusty) trusty; urgency=medium
+
+  * switch to new PPA
+
+ -- Gijs Molenaar (launchpad ppa build key) <gijs@pythonic.nl>  Mon, 26 Jan 2015 14:23:46 +0200
+
+meqtrees-cattery (1.3.3-1trusty) trusty; urgency=low
+
+  * build for trusty
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 04 Apr 2014 14:14:07 +0200
+
+meqtrees-cattery (1.3.3-1precise1) precise; urgency=low
+
+  * new upstream release 1.3.3
+
+ -- Oleg Smirnov <osmirnov@gmail.com>  Tue, 25 Mar 2014 13:00:47 +0200
+
+meqtrees-cattery (1.3.2-5precise1) precise; urgency=low
+
+  * add dependencies for tigger, pyxis, owlcat, casacore-data
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Tue, 04 Mar 2014 12:42:16 +0200
+
+meqtrees-cattery (1.3.2-4precise1) precise; urgency=low
+
+  * forgot to add package specific install file
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 20 Feb 2014 15:11:09 +0200
+
+meqtrees-cattery (1.3.2-3precise1) precise; urgency=low
+
+  *  add meqtrees meta package
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 20 Feb 2014 14:55:06 +0200
+
+meqtrees-cattery (1.3.2-2precise1) precise; urgency=low
+
+  * python-timba should be python-meqtrees-timba
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 31 Jan 2014 10:37:35 +0200
+
+meqtrees-cattery (1.3.2-1precise1) precise; urgency=low
+
+  * new upstream release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 30 Jan 2014 17:46:22 +0200
+
+meqtrees-cattery (1.3.1-1precise1) precise; urgency=low
+
+  * new upstream release that fixed python package name
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Thu, 30 Jan 2014 12:40:53 +0200
+
+meqtrees-cattery (1.3.0-1precise1) precise; urgency=low
+
+  * Initial release
+
+ -- Gijs Molenaar <gijs@pythonic.nl>  Fri, 30 Jan 2014 14:35:59 +0200

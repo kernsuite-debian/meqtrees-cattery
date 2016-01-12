@@ -1,0 +1,20 @@
+Source: meqtrees-cattery
+Section: python
+Priority: extra
+Maintainer: Gijs Molenaar <gijs@pythonic.nl>
+Build-Depends: debhelper (>= 8.0.0), python-all
+Standards-Version: 3.9.2
+Homepage: https://github.com/ska-sa/meqtrees-cattery
+X-Python-Version: 2.7
+
+Package: python-meqtrees-cattery
+Architecture: any
+Depends: ${python:Depends}, ${misc:Depends}, python-purr, python-numpy,
+ python-pyfits, python-casacore, python-scipy, python-meqtrees-timba
+Description: MeqTrees-based frameworks for simulation and calibration of radio interferometers
+
+Package: meqtrees
+Architecture: any
+Depends: python-meqtrees-cattery, python-meqtrees-timba, python-tigger,
+ python-pyxis, python-owlcat, casacore-data, meqtrees-timba
+Description: MeqTrees meta package that depends on all MeqTrees subprojects.
