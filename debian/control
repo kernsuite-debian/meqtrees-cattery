@@ -12,9 +12,21 @@ Architecture: any
 Depends: ${python:Depends}, ${misc:Depends}, python-purr, python-numpy,
  python-pyfits, python-casacore, python-scipy, python-meqtrees-timba
 Description: MeqTrees-based frameworks for simulation and calibration of radio interferometers
+ MeqTrees is a software package for implementing Measurement Equations. This
+ makes it uniquely suited for simulation and calibration of radioastronomical
+ data, especially that involving new radiotelescopes and observational
+ regimes.
+ .
+ The Cattery is a set of MeqTrees-based frameworks for simulation and
+ calibration of radio interferometers. Pretty much everything is done via a
+ Cattery package these days.
 
 Package: meqtrees
 Architecture: any
 Depends: python-meqtrees-cattery, python-meqtrees-timba, python-tigger,
  python-pyxis, python-owlcat, casacore-data, meqtrees-timba
 Description: MeqTrees meta package that depends on all MeqTrees subprojects.
+ MeqTrees is a software package for implementing Measurement Equations. This
+ makes it uniquely suited for simulation and calibration of radioastronomical
+ data, especially that involving new radiotelescopes and observational
+ regimes.
