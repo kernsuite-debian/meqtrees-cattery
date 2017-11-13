@@ -3,7 +3,7 @@ Section: python
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 8.0.0), python-all
-Standards-Version: 3.9.2
+Standards-Version: 3.9.7
 Homepage: https://github.com/ska-sa/meqtrees-cattery
 X-Python-Version: 2.7
 
@@ -11,7 +11,7 @@ Package: python-meqtrees-cattery
 Architecture: any
 Depends: ${python:Depends}, ${misc:Depends}, python-purr, python-numpy,
  python-pyfits, python-casacore, python-scipy, python-meqtrees-timba
-Description: MeqTrees-based frameworks for simulation and calibration of radio interferometers
+Description: Frameworks for simulation and calibration of radio interferometers
  MeqTrees is a software package for implementing Measurement Equations. This
  makes it uniquely suited for simulation and calibration of radioastronomical
  data, especially that involving new radiotelescopes and observational
@@ -23,9 +23,16 @@ Description: MeqTrees-based frameworks for simulation and calibration of radio i
 
 Package: meqtrees
 Architecture: any
-Depends: python-meqtrees-cattery, python-meqtrees-timba, python-tigger,
- python-pyxis, python-owlcat, casacore-data, meqtrees-timba
-Description: MeqTrees meta package that depends on all MeqTrees subprojects.
+Depends:
+ ${misc:Depends},
+ python-meqtrees-cattery,
+ python-meqtrees-timba,
+ python-tigger,
+ python-pyxis,
+ python-owlcat,
+ casacore-data,
+ meqtrees-timba
+Description: Meta package that depends on all MeqTrees subprojects.
  MeqTrees is a software package for implementing Measurement Equations. This
  makes it uniquely suited for simulation and calibration of radioastronomical
  data, especially that involving new radiotelescopes and observational
