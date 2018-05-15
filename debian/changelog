@@ -1,3 +1,9 @@
+meqtrees-cattery (1.5.3-1kern1) bionic; urgency=medium
+
+  * build for KERN-4 (bionic)
+
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 15 May 2018 14:49:38 +0200
+
 meqtrees-cattery (1.5.3-1) xenial; urgency=medium
 
   [ Gijs Molenaar ]
@@ -5,7 +11,7 @@ meqtrees-cattery (1.5.3-1) xenial; urgency=medium
 
   [ KERN packaging ]
 
- -- KERN packaging <packaging@kernsuite.info>  Tue, 06 Feb 2018 09:49:17 +0200
+ -- KERN packaging <packaging@kernsuite.info>  Tue, 15 May 2018 14:49:06 +0200
 
 meqtrees-cattery (1.5.1-1kern1) xenial; urgency=medium
 
