@@ -27,7 +27,7 @@ Depends:
  ${misc:Depends},
  python-meqtrees-cattery,
  python-meqtrees-timba,
- python-tigger,
+ python-astro-tigger,
  python-pyxis,
  python-owlcat,
  casacore-data,
