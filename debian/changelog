@@ -1,3 +1,10 @@
+meqtrees-cattery (1.5.3-1kern2) bionic; urgency=medium
+
+  [ Gijs Molenaar ]
+  * fix dependency issue
+
+ -- KERN packaging <packaging@kernsuite.info>  Thu, 21 Jun 2018 15:20:23 +0200
+
 meqtrees-cattery (1.5.3-1kern1) bionic; urgency=medium
 
   * build for KERN-4 (bionic)
