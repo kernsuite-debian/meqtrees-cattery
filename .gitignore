@@ -17,3 +17,5 @@ test/Batchtest/WSRT.MS_p0.vds
 *.bck
 MANIFEST
 dist/
+.venv*/
+*.egg-info/
