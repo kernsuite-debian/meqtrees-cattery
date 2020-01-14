@@ -3,7 +3,7 @@
 import os
 from distutils.core import setup
 from distutils.command.install import INSTALL_SCHEMES
-
+import six
 
 def fullsplit(path, result=None):
     """
@@ -22,7 +22,7 @@ def fullsplit(path, result=None):
 # Tell distutils not to put the data_files in platform-specific installation
 # locations. See here for an explanation:
 # http://groups.google.com/group/comp.lang.python/browse_thread/thread/35ec7b2fed36eaec/2105ee4d9e8042cb
-for scheme in INSTALL_SCHEMES.values():
+for scheme in list(INSTALL_SCHEMES.values()):
     scheme['data'] = scheme['purelib']
 
 packages = []
@@ -40,19 +40,29 @@ for dirpath, dirnames, filenames in os.walk('Cattery'):
         data_files.append([dirpath, [os.path.join(dirpath, f) for f in filenames]])
 
 install_requires = [
-    'numpy',
+    'numpy>=1.16',
     'purr',
-    'astropy',
+    'astropy>=3.0.0',
     'python_casacore',
     'scipy',
     'astro_kittens',
     'astro_pyxis',
+    'six'
     # 'Timba' is not on pypi
+] if six.PY3 else [
+    'numpy<=1.16', # last python 2.7 version
+    'purr',
+    'astropy<=2.0.11', # last python 2.7 version
+    'python_casacore',
+    'scipy',
+    'astro_kittens',
+    'astro_pyxis',
+    'six'
 ]
 
 
 setup(name='meqtrees_cattery',
-      version='1.6.0',
+      version='1.7.0',
       description='MeqTrees-based frameworks for simulation and calibration of radio interferometers ',
       author='Oleg Smirnov',
       author_email='osmirnov@gmail.com',
