@@ -1,0 +1,16 @@
+Author: KERN packaging <packaging@kernsuite.info>
+Date: 2020-05-27
+Subject: Complete IF statment
+
+diff --git a/Cattery/Calico/Flagger.py b/Cattery/Calico/Flagger.py
+index 163c43b..0e753da 100644
+--- a/Cattery/Calico/Flagger.py
++++ b/Cattery/Calico/Flagger.py
+@@ -1079,6 +1079,7 @@ class Flagger (Timba.dmi.verbosity):
+         raise RuntimeError("glish not found, so cannot run autoflagger");
+       # write commands to temporary file and run glish
+       if cmdfile:
++        pass;
+       else:
+         fh,cmdfile = tempfile.mkstemp(prefix="autoflag",suffix=".g");
+         fobj = os.fdopen(fh,"wt");
