@@ -3,6 +3,7 @@ Section: python
 Priority: extra
 Maintainer: Gijs Molenaar <gijs@pythonic.nl>
 Build-Depends: debhelper (>= 9),
+               dh-python,
                makems,
                libqdbm-dev,
                casacore-data,
