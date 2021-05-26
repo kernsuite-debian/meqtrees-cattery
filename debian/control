@@ -1,32 +1,31 @@
 Source: meqtrees-cattery
 Section: python
 Priority: extra
-Maintainer: Gijs Molenaar <gijs@pythonic.nl>
-Build-Depends: debhelper (>= 9),
+Maintainer: KERN packaging <packaging@kernsuite.info>
+Build-Depends: debhelper (>= 11),
                dh-python,
                makems,
                libqdbm-dev,
                casacore-data,
-               python-all,
-               python-casacore,
-               python-astro-kittens,
-               python-six,
-               python-meqtrees-timba,
-Standards-Version: 3.9.7
+               python3-all,
+               python3-casacore,
+               python3-astro-kittens,
+               python3-six,
+               python3-meqtrees-timba
+Standards-Version: 4.5.0
 Homepage: https://github.com/ska-sa/meqtrees-cattery
-X-Python-Version: 2.7
-X-Python3-Version: 3.6
+X-Python3-Version: >=3.6
 
-Package: python-meqtrees-cattery
+Package: python3-meqtrees-cattery
 Architecture: any
-Depends: ${python:Depends},
+Depends: ${python3:Depends},
          ${misc:Depends},
-         python-future,
-         python-purr,
-         python-numpy,
-         python-pyfits,
-         python-scipy,
-         python-meqtrees-timba
+         python3-future,
+         python3-purr,
+         python3-numpy,
+         python3-astropy,
+         python3-scipy,
+         python3-meqtrees-timba
 Description: Frameworks for simulation and calibration of radio interferometers
  MeqTrees is a software package for implementing Measurement Equations. This
  makes it uniquely suited for simulation and calibration of radioastronomical
@@ -40,7 +39,7 @@ Description: Frameworks for simulation and calibration of radio interferometers
 Package: meqtrees
 Architecture: any
 Depends:
- ${misc:Depends}, ${python:Depends}, python-meqtrees-cattery
+ ${misc:Depends}, ${python3:Depends}, python3-meqtrees-cattery
 Description: Meta package that depends on all MeqTrees subprojects.
  MeqTrees is a software package for implementing Measurement Equations. This
  makes it uniquely suited for simulation and calibration of radioastronomical
