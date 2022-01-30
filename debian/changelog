@@ -1,7 +1,14 @@
+meqtrees-cattery (1.7.6-1kern1) focal; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * New upstream version 1.7.6
+
+ -- KERN packaging <packaging@kernsuite.info>  Sun, 30 Jan 2022 09:50:13 +0000
+
 meqtrees-cattery (1.7.2-1kern2) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]
-  * Nuew upstrean version 1.7.2
+  * New upstrean version 1.7.2
   * Build for kern-7 (focal)
   * Support py3 only  
 
