@@ -1,3 +1,10 @@
+meqtrees-cattery (1.7.9-2kern1) focal; urgency=medium
+
+  [ Athanaseus Javas Ramaila ]
+  * Add patch to fix python3 forloop syntax
+
+ -- KERN packaging <packaging@kernsuite.info>  Wed, 12 Oct 2022 11:09:21 +0000
+
 meqtrees-cattery (1.7.9-1kern1) focal; urgency=medium
 
   [ Athanaseus Javas Ramaila ]
